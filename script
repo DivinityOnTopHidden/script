@@ -1,0 +1,695 @@
+local ColorWord1 = "White"
+local ColorWord2 = "Brick yellow"
+local ColorWord3 = "Light reddish violet"
+local ColorWord4 = "Pastel blue"
+local ColorWord5 = "Nougat"
+local ColorWord6 = "Bright red"
+local ColorWord7 = "Bright yellow"
+local ColorWord8 = "Black"
+local ColorWord9 = "Dark green"
+local ColorWord10 = "Medium green"
+local ColorWord11 = "Bright green"
+local ColorWord12 = "Dark orange"
+local ColorWord13 = "Light blue"
+local ColorWord14 = "Medium red"
+local ColorWord15 = "Medium blue"
+local ColorWord16 = "Bright violet"
+local ColorWord17 = "Br. yellowish orange"
+local ColorWord18 = "Bright bluish green"
+local ColorWord19 = "Br. Yellowish green"
+local ColorWord20 = "Light orange"
+local ColorWord21 = "Sand blue"
+local ColorWord22 = "Earth green"
+local ColorWord23 = "Sand green"
+local ColorWord24 = "Sand red"
+local ColorWord25 = "Reddish brown"
+local ColorWord27 = "Dark stone grey"
+local ColorWord28 = "Light stone grey"
+local ColorWord29 = "Brown"
+local ColorWord30 = "Cool yellow"
+local ColorWord31 = "Institutional white"
+local ColorWord32 = "Silver"
+local ColorWord33 = "Really black"
+local ColorWord34 = "Neon orange"
+local ColorWord35 = "Alder"
+local ColorWord36 = "Dusty rose"
+local ColorWord37 = "Olive"
+local ColorWord38 = "New Yeller"
+local ColorWord39 = "Really blue"
+local ColorWord40 = "Navy blue"
+local ColorWord41 = "Deep blue"
+local ColorWord42 = "Cyan"
+local ColorWord43 = "CGA brown"
+local ColorWord44 = "Magenta"
+local ColorWord45 = "Pink"
+local ColorWord46 = "Deep orange"
+local ColorWord47 = "Teal"
+local ColorWord48 = "Toothpaste"
+local ColorWord49 = "Lime green"
+local ColorWord50 = "Camo"
+local ColorWord51 = "Grime"
+local ColorWord52 = "Lavender"
+local ColorWord53 = "Pastel light blue"
+local ColorWord54 = "Pastel orange"
+local ColorWord55 = "Pastel violet"
+local ColorWord56 = "Pastel blue-green"
+local ColorWord57 = "Pastel green"
+local ColorWord58 = "Pastel yellow"
+local ColorWord59 = "Pastel brown"
+local ColorWord60 = "Royal purple"
+local ColorWord61 = "Hot pink"
+
+local FateColor = Instance.new("ScreenGui")
+local Background3 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local ContainerFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local ExtraFrame = Instance.new("Frame")
+local TitleColor = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local Minimum = Instance.new("TextButton")
+local ColorBox = Instance.new("TextBox")
+
+local FateColor2 = Instance.new("ScreenGui")
+local Background7 = Instance.new("Frame")
+local UICorner7 = Instance.new("UICorner")
+local TitleColor2 = Instance.new("TextLabel")
+local Close2 = Instance.new("TextButton")
+local Minimum2 = Instance.new("TextButton")
+
+FateColor.Name = "FateColor"
+FateColor.Parent = game.CoreGui
+FateColor.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Background3.Name = "Background3"
+Background3.Parent = FateColor
+Background3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Background3.Position = UDim2.new(0.85, 0, 0.86, 0)
+Background3.Size = UDim2.new(0, 284, 0, 131)
+Background3.Active = true
+Background3.Draggable = true
+
+UICorner.CornerRadius = UDim.new(0, 12)
+UICorner.Parent = Background3
+
+ContainerFrame.Name = "ContainerFrame"
+ContainerFrame.Parent = Background3
+ContainerFrame.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+ContainerFrame.Position = UDim2.new(0.0211267602, 0, 0.335877866, 0)
+ContainerFrame.Size = UDim2.new(0, 272, 0, 81)
+
+UICorner_2.CornerRadius = UDim.new(0, 12)
+UICorner_2.Parent = ContainerFrame
+
+ExtraFrame.Name = "ExtraFrame"
+ExtraFrame.Parent = Background3
+ExtraFrame.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+ExtraFrame.BorderSizePixel = 0
+ExtraFrame.Position = UDim2.new(0.0211267602, 0, 0.24427481, 0)
+ExtraFrame.Size = UDim2.new(0, 272, 0, 2)
+
+TitleColor.Name = "TitleColor"
+TitleColor.Parent = Background3
+TitleColor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleColor.BackgroundTransparency = 1.000
+TitleColor.Position = UDim2.new(0.147887319, 0, 0, 0)
+TitleColor.Size = UDim2.new(0, 200, 0, 32)
+TitleColor.Font = Enum.Font.SciFi
+TitleColor.Text = "Vengeful Client"
+TitleColor.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleColor.TextSize = 22.000
+
+Close.Name = "Close"
+Close.Parent = Background3
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.873239458, 0, 0, 0)
+Close.Size = UDim2.new(0, 30, 0, 32)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextSize = 26.000
+Close.MouseButton1Click:Connect(function()
+	Background3:Destroy()
+end)
+
+Minimum.Name = "Minimum"
+Minimum.Parent = Background3
+Minimum.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimum.BackgroundTransparency = 1.000
+Minimum.Position = UDim2.new(0.767605662, 0, 0, 0)
+Minimum.Size = UDim2.new(0, 30, 0, 32)
+Minimum.Font = Enum.Font.SourceSans
+Minimum.Text = "-"
+Minimum.TextColor3 = Color3.fromRGB(255, 170, 0)
+Minimum.TextSize = 40.000
+Minimum.MouseButton1Click:Connect(function()
+    Background3.Visible = false
+    Background7.Visible = true
+end)
+
+ColorBox.Name = "ColorBox"
+ColorBox.Parent = Background3
+ColorBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ColorBox.BackgroundTransparency = 1.000
+ColorBox.Position = UDim2.new(0.0211267602, 0, 0.335877866, 0)
+ColorBox.Size = UDim2.new(0, 272, 0, 81)
+ColorBox.Font = Enum.Font.Oswald
+ColorBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+ColorBox.PlaceholderText = "Enter Brick Color Here"
+ColorBox.Text = ""
+ColorBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+ColorBox.TextSize = 26.000
+local function MainTeamColors(Color)
+	if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord1 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "White")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord2 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Brick yellow")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord3 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Light reddish violet")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord4 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Pastel blue")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord5 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Nougat")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord6 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Bright red")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord7 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Bright yellow")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord8 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Black")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord9 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Dark green")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord10 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Medium green")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord11 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Bright green")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord12 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Dark orange")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord13 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Light blue")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord14 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Medium red")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord15 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Medium blue")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord16 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Bright violet")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord17 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Br. yellowish orange")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord18 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Bright bluish green")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord19 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Br. yellowish green")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord20 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Light orange")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord21 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Sand blue")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord22 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Earth green")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord23 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Sand green")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord24 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Sand red")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord25 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Reddish brown")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord27 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Dark stone grey")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord28 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Light stone grey")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord29 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Brown")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord30 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Cool yellow")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord31 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Institutional white")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord32 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Silver")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord33 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Really black")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord34 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Neon orange")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord35 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Alder")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord36 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Dusty rose")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord37 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Olive")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord38 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "New Yeller")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord39 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Really blue")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord40 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Navy blue")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord41 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Deep blue")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord42 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Cyan")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord44 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Magenta")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord45 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Pink")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord46 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Deep orange")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord47 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Teal")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord48 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Toothpaste")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord49 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Lime green")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord50 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Camo")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord51 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Grime")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord52 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Lavender")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord53 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Pastel light blue")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord54 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Pastel orange")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord55 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Pastel violet")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord56 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Pastel blue-green")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord57 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Pastel green")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord58 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Pastel yellow")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord59 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Pastel brown")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord60 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Royal purple")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+    if Color then
+		local colorcheck = ColorBox.Text
+	    if colorcheck == ColorWord61 then
+            saved = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            game:GetService("Workspace").Remote.loadchar:InvokeServer(game:GetService("Players").LocalPlayer, "Hot pink")
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = saved
+	    end
+	end
+end
+ColorBox.FocusLost:Connect(MainTeamColors)
+
+
+FateColor2.Name = "FateColor2"
+FateColor2.Parent = game.CoreGui
+FateColor2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Background7.Name = "Background7"
+Background7.Parent = FateColor2
+Background7.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Background7.Position = UDim2.new(0.85, 0, 0.86, 0)
+Background7.Size = UDim2.new(0, 284, 0, 32)
+Background7.Active = true
+Background7.Draggable = true
+Background7.Visible = false
+
+UICorner7.CornerRadius = UDim.new(0, 12)
+UICorner7.Parent = Background7
+
+TitleColor2.Name = "TitleColor"
+TitleColor2.Parent = Background7
+TitleColor2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleColor2.BackgroundTransparency = 1.000
+TitleColor2.Position = UDim2.new(0.147887319, 0, 0, 0)
+TitleColor2.Size = UDim2.new(0, 200, 0, 32)
+TitleColor2.Font = Enum.Font.SciFi
+TitleColor2.Text = "Vengeful Client"
+TitleColor2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleColor2.TextSize = 22.000
+
+Close2.Name = "Close"
+Close2.Parent = Background7
+Close2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close2.BackgroundTransparency = 1.000
+Close2.Position = UDim2.new(0.873239458, 0, 0, 0)
+Close2.Size = UDim2.new(0, 30, 0, 32)
+Close2.Font = Enum.Font.SourceSans
+Close2.Text = "X"
+Close2.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close2.TextSize = 26.000
+Close2.MouseButton1Click:Connect(function()
+	Background7:Destroy()
+end)
+
+Minimum2.Name = "Minimum"
+Minimum2.Parent = Background7
+Minimum2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Minimum2.BackgroundTransparency = 1.000
+Minimum2.Position = UDim2.new(0.767605662, 0, 0, 0)
+Minimum2.Size = UDim2.new(0, 30, 0, 32)
+Minimum2.Font = Enum.Font.SourceSans
+Minimum2.Text = "+"
+Minimum2.TextColor3 = Color3.fromRGB(255, 170, 0)
+Minimum2.TextSize = 30.000
+Minimum2.MouseButton1Click:Connect(function()
+    Background7.Visible = false
+    Background3.Visible = true
+end)
